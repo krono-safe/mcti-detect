@@ -1,0 +1,7 @@
+name "mcti-detect"
+description "Detects overlap of temporal transitions"
+authors "Jean Guyomarc'h"
+copyright "Copyright © Krono-Safe S.A. 2020"
+license "proprietary"
+dependency "mir" version="~>3.2.0"
+targetType "executable"

@@ -1,0 +1,50 @@
+{
+  "graph": [
+    {
+      "source": "a",
+      "targets": [
+        {
+          "node": "b",
+          "transition": "B0"
+        }
+      ]
+    },
+    {
+      "source": "b",
+      "targets": [
+        {
+          "node": "c",
+          "transition": "B1"
+        }
+      ]
+    },
+    {
+      "source": "c",
+      "targets": [
+        {
+          "node": "d",
+          "transition": "B2"
+        }
+      ]
+    },
+    {
+      "source": "d",
+      "targets": [
+        {
+          "node": "e",
+          "transition": "B3"
+        }
+      ]
+    },
+    {
+      "source": "e",
+      "targets": [
+        {
+          "node": "b",
+          "transition": "B4"
+        }
+      ]
+    }
+  ],
+  "start": "a"
+}

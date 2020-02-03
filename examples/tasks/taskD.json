@@ -1,0 +1,143 @@
+{
+  "graph": [
+    {
+      "source": "a",
+      "targets": [
+        {
+          "node": "b",
+          "transition": "D0"
+        }
+      ]
+    },
+    {
+      "source": "b",
+      "targets": [
+        {
+          "node": "c",
+          "transition": "D1"
+        }
+      ]
+    },
+    {
+      "source": "c",
+      "targets": [
+        {
+          "node": "d",
+          "transition": "D2"
+        },
+        {
+          "node": "f",
+          "transition": "D5"
+        }
+      ]
+    },
+    {
+      "source": "d",
+      "targets": [
+        {
+          "node": "e",
+          "transition": "D3"
+        }
+      ]
+    },
+    {
+      "source": "e",
+      "targets": [
+        {
+          "node": "b",
+          "transition": "D4"
+        }
+      ]
+    },
+    {
+      "source": "f",
+      "targets": [
+        {
+          "node": "g",
+          "transition": "D6"
+        }
+      ]
+    },
+    {
+      "source": "g",
+      "targets": [
+        {
+          "node": "n",
+          "transition": "D7"
+        },
+        {
+          "node": "h",
+          "transition": "D8"
+        }
+      ]
+    },
+    {
+      "source": "n",
+      "targets": [
+        {
+          "node": "c",
+          "transition": "D16"
+        }
+      ]
+    },
+    {
+      "source": "h",
+      "targets": [
+        {
+          "node": "i",
+          "transition": "D9"
+        }
+      ]
+    },
+    {
+      "source": "i",
+      "targets": [
+        {
+          "node": "m",
+          "transition": "D10"
+        },
+        {
+          "node": "j",
+          "transition": "D11"
+        }
+      ]
+    },
+    {
+      "source": "m",
+      "targets": [
+        {
+          "node": "g",
+          "transition": "D15"
+        }
+      ]
+    },
+    {
+      "source": "j",
+      "targets": [
+        {
+          "node": "k",
+          "transition": "D12"
+        }
+      ]
+    },
+    {
+      "source": "k",
+      "targets": [
+        {
+          "node": "l",
+          "transition": "D13"
+        }
+      ]
+    },
+    {
+      "source": "l",
+      "targets": [
+        {
+          "node": "c",
+          "transition": "D14"
+        }
+      ]
+    }
+  ],
+  "start": "a"
+}

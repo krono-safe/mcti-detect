@@ -1,0 +1,133 @@
+{
+  "start": "a",
+  "graph": [
+    {
+      "source": "a",
+      "targets": [
+        {
+          "node": "b",
+          "transition": "E0"
+        }
+      ]
+    },
+    {
+      "source": "b",
+      "targets": [
+        {
+          "node": "c",
+          "transition": "E1"
+        },
+        {
+          "node": "e",
+          "transition": "E2"
+        }
+      ]
+    },
+    {
+      "source": "c",
+      "targets": [
+        {
+          "node": "d",
+          "transition": "E3"
+        },
+        {
+          "node": "g",
+          "transition": "E4"
+        }
+      ]
+    },
+    {
+      "source": "d",
+      "targets": [
+        {
+          "node": "h",
+          "transition": "E5"
+        }
+      ]
+    },
+    {
+      "source": "h",
+      "targets": [
+        {
+          "node": "j",
+          "transition": "E6"
+        }
+      ]
+    },
+    {
+      "source": "j",
+      "targets": [
+        {
+          "node": "k",
+          "transition": "E7"
+        }
+      ]
+    },
+    {
+      "source": "k",
+      "targets": [
+        {
+          "node": "l",
+          "transition": "E8"
+        }
+      ]
+    },
+    {
+      "source": "l",
+      "targets": [
+        {
+          "node": "h",
+          "transition": "E9"
+        },
+        {
+          "node": "i",
+          "transition": "E10"
+        }
+      ]
+    },
+    {
+      "source": "i",
+      "targets": [
+        {
+          "node": "j",
+          "transition": "E11"
+        }
+      ]
+    },
+    {
+      "source": "g",
+      "targets": [
+        {
+          "node": "h",
+          "transition": "E12"
+        },
+        {
+          "node": "i",
+          "transition": "E13"
+        }
+      ]
+    },
+    {
+      "source": "e",
+      "targets": [
+        {
+          "node": "g",
+          "transition": "E14"
+        },
+        {
+          "node": "f",
+          "transition": "E15"
+        }
+      ]
+    },
+    {
+      "source": "f",
+      "targets": [
+        {
+          "node": "i",
+          "transition": "E16"
+        }
+      ]
+    }
+  ]
+}

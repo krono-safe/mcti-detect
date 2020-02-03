@@ -1,0 +1,54 @@
+{
+  "graph": [
+    {
+      "source": "a",
+      "targets": [
+        {
+          "node": "b",
+          "transition": "C0"
+        }
+      ]
+    },
+    {
+      "source": "b",
+      "targets": [
+        {
+          "node": "c",
+          "transition": "C1"
+        },
+        {
+          "node": "d",
+          "transition": "C2"
+        }
+      ]
+    },
+    {
+      "source": "c",
+      "targets": [
+        {
+          "node": "b",
+          "transition": "C3"
+        }
+      ]
+    },
+    {
+      "source": "d",
+      "targets": [
+        {
+          "node": "e",
+          "transition": "C2"
+        }
+      ]
+    },
+    {
+      "source": "e",
+      "targets": [
+        {
+          "node": "b",
+          "transition": "C4"
+        }
+      ]
+    }
+  ],
+  "start": "a"
+}
