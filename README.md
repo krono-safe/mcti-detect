@@ -1,5 +1,7 @@
 # mcti-detect
 
+[![Build Status](https://travis-ci.org/krono-safe/mcti-detect.svg?branch=master)](https://travis-ci.org/krono-safe/mcti-detect)
+
 Multi-Core Time-Interferences Detector (or `mcti-detect`) is a program written
 using the [D programming language][1] that analyses a **time-constrained
 application** and checks whether the provided exclusion groups hold or not.
