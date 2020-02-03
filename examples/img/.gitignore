@@ -1,0 +1,2 @@
+# Don't keep the .dot files - we only keep generated files for convenience.
+*.dot

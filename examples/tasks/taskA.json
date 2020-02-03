@@ -1,0 +1,32 @@
+{
+  "graph": [
+    {
+      "source": "a",
+      "targets": [
+        {
+          "node": "b",
+          "transition": "A0"
+        }
+      ]
+    },
+    {
+      "source": "b",
+      "targets": [
+        {
+          "node": "c",
+          "transition": "A1"
+        }
+      ]
+    },
+    {
+      "source": "c",
+      "targets": [
+        {
+          "node": "b",
+          "transition": "A2"
+        }
+      ]
+    }
+  ],
+  "start": "a"
+}
