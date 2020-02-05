@@ -1,0 +1,196 @@
+{
+  "start": "a",
+  "graph": [
+    {
+      "source": "a",
+      "targets": [
+        {
+          "node": "b",
+          "transition": "F0"
+        }
+      ]
+    },
+    {
+      "source": "b",
+      "targets": [
+        {
+          "node": "c",
+          "transition": "F1"
+        },
+        {
+          "node": "i",
+          "transition": "F9"
+        }
+      ]
+    },
+    {
+      "source": "c",
+      "targets": [
+        {
+          "node": "d",
+          "transition": "F2"
+        },
+        {
+          "node": "h",
+          "transition": "F3"
+        }
+      ]
+    },
+    {
+      "source": "d",
+      "targets": [
+        {
+          "node": "e",
+          "transition": "F4"
+        }
+      ]
+    },
+    {
+      "source": "e",
+      "targets": [
+        {
+          "node": "f",
+          "transition": "F5"
+        }
+      ]
+    },
+    {
+      "source": "f",
+      "targets": [
+        {
+          "node": "g",
+          "transition": "F6"
+        }
+      ]
+    },
+    {
+      "source": "g",
+      "targets": [
+        {
+          "node": "b",
+          "transition": "F7"
+        }
+      ]
+    },
+    {
+      "source": "h",
+      "targets": [
+        {
+          "node": "g",
+          "transition": "F8"
+        }
+      ]
+    },
+
+
+    {
+      "source": "i",
+      "targets": [
+        {
+          "node": "i1",
+          "transition": "F10"
+        }
+      ]
+    },
+    {
+      "source": "i1",
+      "targets": [
+        {
+          "node": "i2",
+          "transition": "F10"
+        }
+      ]
+    },
+    {
+      "source": "i2",
+      "targets": [
+        {
+          "node": "i3",
+          "transition": "F10"
+        }
+      ]
+    },
+    {
+      "source": "i3",
+      "targets": [
+        {
+          "node": "i4",
+          "transition": "F10"
+        }
+      ]
+    },
+    {
+      "source": "i4",
+      "targets": [
+        {
+          "node": "i5",
+          "transition": "F10"
+        }
+      ]
+    },
+    {
+      "source": "i5",
+      "targets": [
+        {
+          "node": "i6",
+          "transition": "F10"
+        }
+      ]
+    },
+    {
+      "source": "i6",
+      "targets": [
+        {
+          "node": "i7",
+          "transition": "F10"
+        }
+      ]
+    },
+    {
+      "source": "i7",
+      "targets": [
+        {
+          "node": "i8",
+          "transition": "F10"
+        }
+      ]
+    },
+    {
+      "source": "i8",
+      "targets": [
+        {
+          "node": "i9",
+          "transition": "F10"
+        }
+      ]
+    },
+    {
+      "source": "i9",
+      "targets": [
+        {
+          "node": "i10",
+          "transition": "F10"
+        }
+      ]
+    },
+    {
+      "source": "i10",
+      "targets": [
+        {
+          "node": "i11",
+          "transition": "F10"
+        }
+      ]
+    },
+    {
+      "source": "i11",
+      "targets": [
+        {
+          "node": "i",
+          "transition": "F10"
+        }
+      ]
+    }
+
+  ]
+}

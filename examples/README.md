@@ -40,3 +40,7 @@ and the exclusion group holds.
 ## D-E-with-overlap
 
 ![D-E-with-overlap](img/D-E-with-overlap.dot.jpeg)
+
+## A-F-no-overlap
+
+![A-F-no-overlap](img/A-F-no-overlap.dot.jpeg)
