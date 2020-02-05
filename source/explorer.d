@@ -188,16 +188,19 @@ private dateset[string] explore_nondeterministic(in Task task)
   /* Construction of D1 */
   foreach (i, nodes; S)
   {
-    if (! (nodes.length == 1 && nodes[0] == START)) /* S[i] != {start} */
+    if ((nodes.length == 1 && nodes[0] == START)) /* S[i] == {start} */
     {
-      foreach (node; nodes) /* for q in S[i] */
+      assert(i == 0);
+      continue;
+    }
+
+    foreach (node; nodes) /* for q in S[i] */
+    {
+      foreach (transition; TRANSITIONS[node])
       {
-        foreach (transition; TRANSITIONS[node])
-        {
-          auto d = Date(i, 0);
-          if (! dates[transition].canFind(d))
-          { dates[transition] ~= d; }
-        }
+        auto d = Date(i, 0);
+        if (! dates[transition].canFind(d))
+        { dates[transition] ~= d; }
       }
     }
   }
