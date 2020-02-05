@@ -13,7 +13,6 @@ import std.algorithm.setops;
 import task;
 import date;
 
-
 private dateset[string] explore_nondeterministic(in Task task)
 {
   /* Shortcuts */
@@ -115,20 +114,20 @@ private dateset[string] explore_nondeterministic(in Task task)
     foreach (scc; SCC)
     {
       size_t min_len = size_t.max;
-      string[] imp;
+      size_t[string] imp;
       foreach (node_idx; scc)
       {
         const node = GS.index[node_idx];
-
         const len = sl[node];
         if ((len > 0) && (len <= min_len))
         {
           min_len = len;
-          imp ~= node;
+          imp[node] = len;
         }
       }
-      foreach (x; imp)
-      { Imp[x] = true; }
+
+      foreach (node, value; imp)
+      { if (value <= min_len) { Imp[node] = true; } }
     }
   }
 
