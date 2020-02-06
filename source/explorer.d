@@ -234,23 +234,20 @@ private dateset[string] explore_nondeterministic(in Task task)
   const cprime_max = (N * N) - N - 1;
   foreach(q; Qimp)
   {
+    const d = sl[q];
     for (size_t cprime = cprime_min; cprime <= cprime_max; cprime++)
     {
-      foreach (d; D)
+      const cprime_bound = (N * N) - N - d;
+      foreach (qf; F)
       {
-        const cprime_bound = (N * N) - N - d;
-        foreach (qf; F)
+        /* q in Tq,c' AND c' >= n^2-n-d */
+        if ((cprime >= cprime_bound) && (T[qf][cprime - cprime_min].canFind(q)))
         {
-          /* q in Tq,c' AND sl(q) = d AND c' >= n^2-n-d */
-          if ((sl[q] == d) && (cprime >= cprime_bound) &&
-              (T[qf][cprime - cprime_min].canFind(q)))
+          foreach (transition; TRANSITIONS[qf])
           {
-            foreach (transition; TRANSITIONS[qf])
-            {
-              auto date = Date(cprime + N - 1, d);
-              if (! dates[transition].canFind(date))
-              { dates[transition] ~= date; }
-            }
+            auto date = Date(cprime + N - 1, d);
+            if (! dates[transition].canFind(date))
+            { dates[transition] ~= date; }
           }
         }
       }
