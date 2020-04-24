@@ -7,7 +7,7 @@ using the [D programming language][1] that analyses a **time-constrained
 application** and checks whether the provided exclusion groups hold or not.
 
 It is a proof-of-concept for the algorithms described in the paper (to be
-published) **Preventing Multi-Core Time-Interferences by Design**.
+published) **Simultaneity as a Design Constraint**.
 
 ## Building from sources
 
