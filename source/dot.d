@@ -12,7 +12,11 @@ import task;
 import group;
 import intersect;
 
-void dotify(in string filename, in Task[] tasks, in group[] groups, in Intersect intersect)
+void dotify(
+  in string filename,
+  in Task[] tasks,
+  in group[] groups,
+  in Intersect intersect)
 {
   auto file = File(filename, "w");
   file.writeln("digraph application {");
@@ -22,9 +26,11 @@ void dotify(in string filename, in Task[] tasks, in group[] groups, in Intersect
     /* First, dump all the nodes */
     foreach (source_node; task.graph.keys)
     {
-      file.write("  T", task_id, source_node, " [label=\"", source_node, "\"]");
+      file.write("  T", task_id, source_node, " [label=\"\"]");
       if (source_node == task.start)
-      { file.write(" [shape=box]"); }
+      { file.write(" [shape=circle]"); }
+      else
+      { file.write(" [shape=point,width=0.2]"); }
       file.writeln(';');
     }
 
@@ -56,7 +62,10 @@ void dotify(in string filename, in Task[] tasks, in group[] groups, in Intersect
             }
             else /* No overlap */
             { file.write(" [color=green]"); }
+            file.write("[fontname=\"bold\",penwidth=3]");
           }
+          else
+          { file.write(" [style=dashed]"); }
         }
         /* Name of the transition */
         file.writeln("[label=\"", label[], "\"];");
