@@ -1,0 +1,147 @@
+{
+  "start": "a",
+  "graph": [
+    {
+      "source": "a",
+      "targets": [
+        {
+          "node": "b",
+          "transition": "G0"
+        }
+      ]
+    },
+    {
+      "source": "b",
+      "targets": [
+        {
+          "node": "c",
+          "transition": "G1"
+        }
+      ]
+    },
+    {
+      "source": "c",
+      "targets": [
+        {
+          "node": "d",
+          "transition": "G2"
+        },
+        {
+          "node": "h",
+          "transition": "G7"
+        },
+        {
+          "node": "j",
+          "transition": "G10"
+        },
+        {
+          "node": "k",
+          "transition": "G12"
+        }
+      ]
+    },
+    {
+      "source": "d",
+      "targets": [
+        {
+          "node": "e",
+          "transition": "G3"
+        }
+      ]
+    },
+    {
+      "source": "e",
+      "targets": [
+        {
+          "node": "f",
+          "transition": "G4"
+        }
+      ]
+    },
+    {
+      "source": "f",
+      "targets": [
+        {
+          "node": "g",
+          "transition": "G5"
+        }
+      ]
+    },
+    {
+      "source": "g",
+      "targets": [
+        {
+          "node": "b",
+          "transition": "G6"
+        }
+      ]
+    },
+    {
+      "source": "h",
+      "targets": [
+        {
+          "node": "i",
+          "transition": "G8"
+        }
+      ]
+    },
+    {
+      "source": "i",
+      "targets": [
+        {
+          "node": "f",
+          "transition": "G9"
+        }
+      ]
+    },
+    {
+      "source": "j",
+      "targets": [
+        {
+          "node": "i",
+          "transition": "G11"
+        }
+      ]
+    },
+    {
+      "source": "k",
+      "targets": [
+        {
+          "node": "l",
+          "transition": "G17"
+        }
+      ]
+    },
+    {
+      "source": "l",
+      "targets": [
+        {
+          "node": "m",
+          "transition": "G13"
+        }
+      ]
+    },
+    {
+      "source": "m",
+      "targets": [
+        {
+          "node": "n",
+          "transition": "G14"
+        },
+        {
+          "node": "g",
+          "transition": "G15"
+        }
+      ]
+    },
+    {
+      "source": "n",
+      "targets": [
+        {
+          "node": "k",
+          "transition": "G16"
+        }
+      ]
+    }
+  ]
+}

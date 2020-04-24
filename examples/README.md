@@ -44,3 +44,11 @@ and the exclusion group holds.
 ## A-F-no-overlap
 
 ![A-F-no-overlap](img/A-F-no-overlap.dot.jpeg)
+
+## E-G-with-overlap
+
+![E-G-with-overlap](img/E-G-with-overlap.dot.jpeg)
+
+## E-G-no-overlap
+
+![E-G-no-overlap](img/E-G-no-overlap.dot.jpeg)
