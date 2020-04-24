@@ -40,6 +40,10 @@ private void run(string[] argv)
   dateset[string] dates;
   const(Task)[] tasks;
 
+  /* Map that associates the name of a temporal transition to the task
+   * in which is has been defined */
+  string[string] transition_to_task;
+
   const groups = groups_parse(group_file);
   foreach (task_file; task_files)
   {
@@ -48,6 +52,9 @@ private void run(string[] argv)
     auto task_dates = explore(task);
     foreach (tt, tt_dates; task_dates)
     { dates[tt] = tt_dates; }
+
+    foreach (transition; task.transitions_list)
+    { transition_to_task[transition] = task.id; }
   }
 
   /* If we were asked to print the dates for each reachable transition, print
@@ -58,7 +65,7 @@ private void run(string[] argv)
     { writeln(transition, ": ", date_list); }
   }
 
-  const intersect = find_intersect(dates, groups);
+  const intersect = find_intersect(dates, groups, transition_to_task);
   if (intersect.exists)
   {
     writeln("Found intersection between '", intersect.tt1, "' and '",
