@@ -5,6 +5,7 @@
 
 import date;
 import group;
+import task;
 
 struct Intersect
 {
@@ -90,7 +91,7 @@ private bool _find_intersect(in dateset d1_list, in dateset d2_list, out size_t 
     {
       /* (1) Intersect of two constants */
       if ((d1.d == 0) && (d2.d == 0))
-      { 
+      {
         if (d1.c == d2.c)
         {
           date = d1.c;
@@ -125,11 +126,14 @@ private bool _find_intersect(in dateset d1_list, in dateset d2_list, out size_t 
       }
     }
   }
-  
+
   return false;
 }
 
-Intersect find_intersect(in dateset[string] dates, in group[] groups)
+Intersect find_intersect(
+  in dateset[string] dates,
+  in group[] groups,
+  in string[string] transition_to_task)
 {
   Intersect isect;
 
@@ -139,6 +143,10 @@ Intersect find_intersect(in dateset[string] dates, in group[] groups)
     {
       foreach (tt2; group)
       {
+        /* Transitions that belong to the same task, by definition, cannot
+         * be executed simultaneously */
+        if (transition_to_task[tt1] == transition_to_task[tt2])
+        { continue; }
         if (tt1 != tt2)
         {
           size_t d;
