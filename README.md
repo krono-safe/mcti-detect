@@ -1,6 +1,6 @@
 # mcti-detect
 
-[![Build Status](https://travis-ci.org/krono-safe/mcti-detect.svg?branch=master)](https://travis-ci.org/krono-safe/mcti-detect)
+[![Build Status](https://github.com/krono-safe/mcti-detect/workflows/CI/badge.svg)](https://github.com/krono-safe/mcti-detect/actions)
 
 Multi-Core Time-Interferences Detector (or `mcti-detect`) is a program written
 using the [D programming language][1] that analyses a **time-constrained

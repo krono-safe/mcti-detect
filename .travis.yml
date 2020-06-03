@@ -1,3 +1,0 @@
-language: d
-
-script: make check
