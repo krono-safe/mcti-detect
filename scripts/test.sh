@@ -98,6 +98,15 @@ expect_no_intersect \
   "taskE.json" "taskG.json" \
   "E-G-no-overlap.json"
 
+expect_intersect_at \
+  "taskE.json" "taskG.json" \
+  "E-G-with-overlap2.json" \
+  "E8" "G6" 6
+
+expect_no_intersect \
+  "taskE.json" "taskG.json" \
+  "E-G-no-overlap2.json"
+
 if [ $STATUS -ne 0 ]; then
   echo "*** Error: $STATUS test(s) failed" 
 fi

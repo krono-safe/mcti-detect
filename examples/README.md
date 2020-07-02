@@ -52,3 +52,11 @@ and the exclusion group holds.
 ## E-G-no-overlap
 
 ![E-G-no-overlap](img/E-G-no-overlap.dot.jpeg)
+
+## E-G-with-overlap2
+
+![E-G-with-overlap2](img/E-G-with-overlap2.dot.jpeg)
+
+## E-G-no-overlap2
+
+![E-G-no-overlap2](img/E-G-no-overlap2.dot.jpeg)
