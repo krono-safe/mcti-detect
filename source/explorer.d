@@ -34,7 +34,10 @@ private dateset[string] explore_nondeterministic(in Task task)
   foreach (key, data; GRAPH)
   {
     foreach (node; data)
-    { if (! PRED[node].canFind(key)) { PRED[node] ~= key; } }
+    {
+      assert(node in PRED, "failed to find node '" ~ node ~ "'" );
+      if (! PRED[node].canFind(key)) { PRED[node] ~= key; }
+    }
   }
 
   alias nodeset = string[];

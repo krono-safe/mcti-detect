@@ -143,6 +143,9 @@ Intersect find_intersect(
     {
       foreach (tt2; group)
       {
+        assert(tt1 in transition_to_task, "failed to find transition '" ~ tt1 ~ "'" );
+        assert(tt2 in transition_to_task, "failed to find transition '" ~ tt2 ~ "'" );
+
         /* Transitions that belong to the same task, by definition, cannot
          * be executed simultaneously */
         if (transition_to_task[tt1] == transition_to_task[tt2])
