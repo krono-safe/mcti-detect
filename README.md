@@ -99,7 +99,7 @@ simultaneously both graphs, you will find that after 3 transitions taken both
 example expected for `A1` and `B3` not to overlap. This is an example of design
 that does not verify a non-interferent property.
 
-For more examples, have a look at the `examples/` directory.
+For more examples, have a look at the [`examples/`](examples/) directory.
 
 
 ## Known Limitations
@@ -121,4 +121,4 @@ This repository is under the [Apache-V2 license](LICENSE).
 [2]: https://dlang.org/download.html
 [3]: https://dub.pm/getting_started
 [4]: https://graphviz.org
-[5]: https://drops.dagstuhl.de/opus/volltexte/2020/12981/
+[5]: https://doi.org/10.4230/LIPIcs.TIME.2020.13
