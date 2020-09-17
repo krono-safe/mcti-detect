@@ -6,8 +6,8 @@ Multi-Core Time-Interferences Detector (or `mcti-detect`) is a program written
 using the [D programming language][1] that analyses a **time-constrained
 application** and checks whether the provided exclusion groups hold or not.
 
-It is a proof-of-concept for the algorithms described in the paper (to be
-published) **Simultaneity as a Design Constraint**.
+It is a proof-of-concept for the algorithms described in the paper
+[Non-Simultaneity as a Design Constraint][5].
 
 ## Building from sources
 
@@ -121,3 +121,4 @@ This repository is under the [Apache-V2 license](LICENSE).
 [2]: https://dlang.org/download.html
 [3]: https://dub.pm/getting_started
 [4]: https://graphviz.org
+[5]: https://drops.dagstuhl.de/opus/volltexte/2020/12981/
