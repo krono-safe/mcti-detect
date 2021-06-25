@@ -125,6 +125,24 @@
         }
       ]
     }
+  ],
+  "display": [
+    { "id": "H0", "html": "H<SUB>0</SUB>" },
+    { "id": "H1", "html": "H<SUB>1</SUB>" },
+    { "id": "H2", "html": "H<SUB>2</SUB>" },
+    { "id": "H3", "html": "H<SUB>3</SUB>" },
+    { "id": "H4", "html": "H<SUB>4</SUB>" },
+    { "id": "H5", "html": "H<SUB>5</SUB>" },
+    { "id": "H6", "html": "H<SUB>6</SUB>" },
+    { "id": "H7", "html": "H<SUB>7</SUB>" },
+    { "id": "H8", "html": "H<SUB>8</SUB>" },
+    { "id": "H9", "html": "H<SUB>9</SUB>" },
+    { "id": "H10", "html": "H<SUB>10</SUB>" },
+    { "id": "H11", "html": "H<SUB>11</SUB>" },
+    { "id": "H12", "html": "H<SUB>12</SUB>" },
+    { "id": "H13", "html": "H<SUB>13</SUB>" },
+    { "id": "H14", "html": "H<SUB>14</SUB>" },
+    { "id": "H15", "html": "H<SUB>15</SUB>" }
   ]
 }
 

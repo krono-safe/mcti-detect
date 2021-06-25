@@ -191,6 +191,18 @@
         }
       ]
     }
-
+  ],
+  "display": [
+    { "id": "F0", "html": "F<SUB>0</SUB>" },
+    { "id": "F1", "html": "F<SUB>1</SUB>" },
+    { "id": "F2", "html": "F<SUB>2</SUB>" },
+    { "id": "F3", "html": "F<SUB>3</SUB>" },
+    { "id": "F4", "html": "F<SUB>4</SUB>" },
+    { "id": "F5", "html": "F<SUB>5</SUB>" },
+    { "id": "F6", "html": "F<SUB>6</SUB>" },
+    { "id": "F7", "html": "F<SUB>7</SUB>" },
+    { "id": "F8", "html": "F<SUB>8</SUB>" },
+    { "id": "F9", "html": "F<SUB>9</SUB>" },
+    { "id": "F10", "html": "F<SUB>10</SUB>" }
   ]
 }

@@ -37,6 +37,7 @@ It is a command-line tool that accepts JSON files.
 
 Two top-level keys:
 - `start`: the name (string) of the node that is the entry point;
+- `display`: a structure to change how [dot][4] produces its files;
 - `graph`: an array of nodes (see below).
 
 A node is an object with the following structure:
@@ -45,6 +46,11 @@ A node is an object with the following structure:
   - `node`: the name of the node that the source can reach;
   - `transition`: the name of the transition along the arc joining `source`
     and `node`.
+
+The `display` key contains an array of objects, each of them containing the
+following keys:
+- `id` (mandatory): the name of the transition or node;
+- `html`: an HTML representation of the label, that dot understands.
 
 
 #### Exclusion Groups
