@@ -11,9 +11,9 @@ It is a proof-of-concept for the algorithms described in the paper
 
 ## Building from sources
 
-You first need to install a [D toolchain][2] for your specific platform.  Then,
-you just have to run the `make check` command. It will compile `mcti-detect`
-and run the test harness.
+You first need to install a [D toolchain][2] for your specific platform (tested
+with `dmd 2.091.0`).  Then, you just have to run the `make check` command. It
+will compile `mcti-detect` and run the test harness.
 
 ## Usage
 
