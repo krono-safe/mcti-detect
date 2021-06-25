@@ -129,5 +129,24 @@
         }
       ]
     }
+  ],
+  "display": [
+    { "id": "E0", "html": "E<SUB>0</SUB>" },
+    { "id": "E1", "html": "E<SUB>1</SUB>" },
+    { "id": "E2", "html": "E<SUB>2</SUB>" },
+    { "id": "E3", "html": "E<SUB>3</SUB>" },
+    { "id": "E4", "html": "E<SUB>4</SUB>" },
+    { "id": "E5", "html": "E<SUB>5</SUB>" },
+    { "id": "E6", "html": "E<SUB>6</SUB>" },
+    { "id": "E7", "html": "E<SUB>7</SUB>" },
+    { "id": "E8", "html": "E<SUB>8</SUB>" },
+    { "id": "E9", "html": "E<SUB>9</SUB>" },
+    { "id": "E10", "html": "E<SUB>10</SUB>" },
+    { "id": "E11", "html": "E<SUB>11</SUB>" },
+    { "id": "E12", "html": "E<SUB>12</SUB>" },
+    { "id": "E13", "html": "E<SUB>13</SUB>" },
+    { "id": "E14", "html": "E<SUB>14</SUB>" },
+    { "id": "E15", "html": "E<SUB>15</SUB>" },
+    { "id": "E16", "html": "E<SUB>16</SUB>" }
   ]
 }
