@@ -26,7 +26,6 @@ private void run(string[] argv)
     "dot-output", "Generate a dot file with the problem statement", &dot_file,
     std.getopt.config.required,
     "task|t", "JSON file describing a task", &task_files,
-    std.getopt.config.required,
     "groups|g", "JSON file describing exclusion groups", &group_file);
 
   if (opts_info.helpWanted)
